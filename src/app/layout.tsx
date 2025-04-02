@@ -21,9 +21,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+      //to customize the font, for the whole website
     <html lang="en" className="dark">
       <body
-      //to customize the font, for the whole website
         className={`${monaSans.className} antialiased pattern`}
       >
         {children}
