@@ -8,7 +8,7 @@ import {
   getInterviewById,
 } from "@/src/lib/actions/general.actions";
 import { Button } from "@/components/ui/button";
-import { getCurrentUser } from "@/src/lib/actions/auth.action";";
+import { getCurrentUser } from "@/src/lib/actions/auth.action";
 
 const Feedback = async ({ params }: RouteParams) => {
   const { id } = await params;
