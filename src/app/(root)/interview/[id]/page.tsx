@@ -2,13 +2,14 @@ import Image from "next/image";
 import { redirect } from "next/navigation";
 
 import Agent from "@/components/Agent";
-import { getRandomInterviewCover } from "@/lib/utils";
+import { getRandomInterviewCover } from "@/src/lib/utils";
 
 import {
   getFeedbackByInterviewId,
   getInterviewById,
-} from "@/lib/actions/general.action";
-import { getCurrentUser } from "@/lib/actions/auth.action";
+} from "@/src/lib/actions/general.actions";
+
+import { getCurrentUser } from "@/src/lib/actions/auth.action";
 import DisplayTechIcons from "@/components/DisplayTechIcons";
 
 const InterviewDetails = async ({ params }: RouteParams) => {
